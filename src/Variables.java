@@ -44,6 +44,23 @@ public class Variables {
         //float: 4 bytes
         //double: 8 bytes
 
+        System.out.println("\n -------------------------------->");
+        //A partir de Java 10 soporta agregar la variable sin el tipo de dato
+        var salario = 1000; //int
+        //pension 3%
+        var pension = salario*0.03; //int double
+
+        var totalSalario = salario - pension;
+
+        System.out.println(salario);
+        System.out.println(pension);
+        System.out.println(totalSalario);
+
+        System.out.println();
+        System.out.println("-----------Cadena-------------");
+
+        var nombreEmpleado = "Gerson Ep";
+        System.out.println("El nombre es: " + nombreEmpleado + " Su salario es: " + totalSalario);
     }
 
 }
