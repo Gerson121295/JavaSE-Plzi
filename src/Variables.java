@@ -29,6 +29,22 @@ public class Variables {
         // Upper Camel Case: NamingJava (para nombre de Clases)
         // Lower Camel Case: fullName, sizeInCentimeters (para nombre de variables y metodos)
 
+        //DataTypes
+        int n = 1234567890; //int solo permite agregar 10 digitos
+        long nL = 12345678901L; //se debe agregar un letra L al final
+        double nD = 123.456123456; //Para calculos matematicos que requiera presicion
+        float nF = 123.456F; //agregar F al final
+
+        // Enteros:
+        // byte: 1 byte  Rango: -128 a 127
+        // short:2 bytes Rango: -32,768 a 37,767
+        // int:  4 bytes Rango: -2,147,483,648 a 2,147,483,647
+        // long: 8 bytes Rango: el doble de 4 bytes
+
+        //float: 4 bytes
+        //double: 8 bytes
+
     }
+
 }
 
