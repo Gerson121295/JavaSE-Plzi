@@ -41,6 +41,7 @@ public class IncrementDecrement {
         ++      incremento      i++     i=i+1
         --      decremento      i--     i=i-1
 
+//Prefijo: ++i    Postfijo:  i++
 
 */
 
