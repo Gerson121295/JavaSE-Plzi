@@ -19,6 +19,21 @@ public class Funciones {
 
     //Las funciones deben vivir al nivel de la clase
 
+    //Tiposde comentarios:
+    // (este es de una sola linea, el compilador no la lee)
+
+    /*
+    * Este comentario es de multiples lineas
+    * El compilador no la lee
+    * fin.
+     */
+
+    /**
+     * Este tipo de comentario o para la documentacio
+     * que el compilador si va a leer.
+     * Por lo que se usa esta estructura
+     */
+
     public static double circleArea(double r){
         //Calcular el area de un circulo: PI * r^2
         return Math.PI * Math.pow(r,2);
