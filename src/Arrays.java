@@ -27,12 +27,28 @@ public class Arrays {
         androidVersions[2] = "CupCake";
         androidVersions[3] = "Donut";
 
-        //acceder a un dato del arreglo
         System.out.println("----- Array de 1 dimension -------");
+
+        //acceder a un dato del arreglo usando el ciclo for
+        System.out.println("--------- Imprime usando ciclo For------------");
+        for (int i = 0; i < androidVersions.length; i++) { //i<=3, se uso la longitud del array(length)
+            System.out.println(androidVersions[i]);
+        }
+
+        System.out.println();
+        System.out.println("------usando Foreach");
+        //usando foreach: Tipo de dato: coleccion que va a traer
+        for (String androidVersion:androidVersions) {
+            System.out.println(androidVersion);
+        }
+
+        //acceder a un dato del arreglo
+ /*       System.out.println("----- Impresion normal -------");
         System.out.println(androidVersions[0]);
         System.out.println(androidVersions[1]);
         System.out.println(androidVersions[2]);
         System.out.println(androidVersions[3]);
+*/
 
         System.out.println("---------------------");
         System.out.println("----- Array de 2 dimension -------");
@@ -47,6 +63,23 @@ public class Arrays {
         cities[3][0] = "Mexico";
         cities[3][1] = "CDMX";
 
+        //Se imprime el array
+        for (int i = 0; i < cities.length; i++) {
+            for (int j = 0; j < cities[i].length; j++) {
+                System.out.println(cities[i][j]);
+            }
+        }
+
+        System.out.println();
+        System.out.println("------usando Foreach");
+        for (String[] pair : cities) {
+            for (String name :pair) {
+                System.out.println(name);
+            }
+
+        }
+
+/*
         System.out.println(cities[0][0]);
         System.out.println(cities[0][1]);
         System.out.println(cities[1][0]);
@@ -55,16 +88,32 @@ public class Arrays {
         System.out.println(cities[2][1]);
         System.out.println(cities[3][0]);
         System.out.println(cities[3][1]);
+*/
 
         System.out.println();
         System.out.println("---------------------");
         System.out.println("----- Array de 4 dimension -------");
 
         String [][][][] animals = new String[2][3][2][2];
-        animals[1][0][0][1] = "Monkey";
+        animals[1][0][0][1] = "Monkey";//[i][j][k][l]
         System.out.println();
         System.out.println();
-        System.out.println(animals[1][0][0][1]);
+//        System.out.println(animals[1][0][0][1]);
+
+        for (int i = 0; i <=1; i++) {
+            for (int j = 0; j <=0; j++) {
+                for (int k = 0; k <=0; k++) {
+                    for (int l = 0; l <=1 ; l++) {
+                        System.out.println(animals[i][j][k][l]);
+                    }
+
+                }
+
+            }
+
+        }
+
+
         System.out.println();
         System.out.println("---------------------");
     }
