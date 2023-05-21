@@ -15,7 +15,14 @@ public class Funciones {
         //Llamada de la funcion convertir moneda
         System.out.println("Pesos a DOlares: " + converToDolar(200, "MXN"));
         System.out.println("Pesos a DOlares: " + converToDolar(1000, "COP"));
+
+        //Habiliar opcion de ver la documentacion en Intelli
+        //Clic en file --> Setting --> Editor --> General --> Code Completion --> Habilitar Show the documentation popup in [1000] ms --> Aceptar
+        //otra forma: Clic en file --> Setting --> Editor --> General --> Code Editing -->Quick documentacion --> habilitar Show quick Documentation on hover -->Aceptar
+        //Luego al escribir la funcion y al pasar el mouse o clic en los 2 puntos se verá la documentacion
+        converToDolar(100, "MXN");
     }
+
 
     //Las funciones deben vivir al nivel de la clase
 
@@ -49,6 +56,14 @@ public class Funciones {
         return (4/3)*(Math.PI)*(Math.pow(r,3));
     }
 
+    //Documentacion de la funcion usando JavaDoc
+
+    /**
+     * Descripcion: Esta funcion que especificando su moneda comvierte una cantidad de dinero en dolares
+     * @param quantity  Cantidad de dinero
+     * @param currency  Tipo de moneda: Solo acepta MXN o COP(colombianos)
+     * @return quantity Devuelve la cantidad actualizada en dolares
+     */
     public static double converToDolar(double quantity, String currency){
         //MXN COP Qtz
         switch (currency){
